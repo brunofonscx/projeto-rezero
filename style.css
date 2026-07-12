@@ -84,7 +84,7 @@ header a:hover {
 .hero {
     font-family: var(--fontx);
     background-color: #a751dd;
-    background-image: url(/imagens/banner001.png);
+    background-image: url(imagens/banner001.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -177,7 +177,7 @@ h3 {
 
 /* Subaru */
 .personagem#p1 {
-    background-image: url(/imagens/subaru1.jpg);
+    background-image: url(imagens/subaru1.jpg);
     background-repeat: no-repeat;
     background-size: 350px;
     background-position: center top;
@@ -185,7 +185,7 @@ h3 {
 
 /* Emilia */
 .personagem#p2 {
-    background-image: url(/imagens/Emilia1.jpg);
+    background-image: url(imagens/Emilia1.jpg);
     background-repeat: no-repeat;
     background-size: 350px;
     background-position: center top;
@@ -193,7 +193,7 @@ h3 {
 
 /* Rem */
 .personagem#p3 {
-    background-image: url(/imagens/rem1.jpg);
+    background-image: url(imagens/rem1.jpg);
     background-repeat: no-repeat;
     background-size: 350px;
     background-position: center top;
@@ -201,7 +201,7 @@ h3 {
 
 /* Beatrice */
 .personagem#p4 {
-    background-image: url(/imagens/bet1.jpg);
+    background-image: url(imagens/bet1.jpg);
     background-repeat: no-repeat;
     background-size: 350px;
     background-position: center top;
