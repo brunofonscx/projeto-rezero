@@ -126,6 +126,7 @@ article {
     min-width: 300px;
     text-align: center;
 }
+
 .personagens {
     font-family: var(--fontx);
 }
@@ -165,8 +166,13 @@ h3 {
     padding: 5px;
 }
 
+
+.personagem:hover {
+    background-color: var(--color2);
+}
+
 .personagem>p {
-    padding: \;
+    
 }
 
 /* Subaru */
