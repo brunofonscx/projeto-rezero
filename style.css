@@ -87,7 +87,7 @@ header a:hover {
 
 .hero {
     font-family: var(--fontx);
-    background-color: #a751dd;
+    background-color: var(--color2);
     background-image: url(imagens/banner001.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -155,7 +155,7 @@ h2 span {
     max-width: 300px;
     min-width: 200px;
     height: 300px;
-    background-color: var(--color3);
+    background-image: linear-gradient(90deg, var(--color3), var(--color1));
     display: inline-block;
     margin: 20px;
     border-radius: 11.3px;
@@ -168,7 +168,7 @@ h2 span {
 .personagem>h3 {
     border-radius: 10px 10px 0px 0px;
     text-align: center;
-    background-color: var(--color4);
+    background: linear-gradient(90deg, var(--color3), var(--color1));
     padding-bottom: 10px;
 }
 .personagem>p,
@@ -176,8 +176,11 @@ h3 {
     background-color: var(--color5);
     margin: -10px -10px 5px -10px;
     padding: 5px;
-}
 
+}
+.personagem p {
+    border-radius: 3px 3px 0px 0px;
+}
 
 .personagem:hover {
     background-color: var(--color2);
@@ -232,7 +235,7 @@ table {
 }
 
 thead {
-    background: linear-gradient(90deg, #6a5acd, #8a2be2);
+    background: linear-gradient(90deg, var(--color3), var(--color1));
 }
 
 thead th {
@@ -254,7 +257,7 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:hover {
-    background: rgba(138, 43, 226, 0.25);
+    background: var(--color5);
     transform: scale(1.01);
 }
 
