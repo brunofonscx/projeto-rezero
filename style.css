@@ -42,8 +42,9 @@ header span {
     color: var(--color2);
 }
 
-header h1 {
-    font-size: 50px;
+header img {
+    padding-top: 20px;
+    width: 200px;
     display: inline-block;
     padding-left: 30px;
 }
@@ -71,6 +72,7 @@ header a {
     color: #fff;
     text-decoration: none;
     margin-right: 30px;
+    text-shadow: rgb(0, 0, 0) 0px 1px 2px 0px, rgb(0, 0, 0) 0px 1px 3px 1px;
 
 }
 
@@ -88,19 +90,21 @@ header a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    box-shadow: inset rgb(0, 0, 0) 200px 50px 250px 0px;
+    box-shadow: rgb(0, 0, 0) 200px 30px 600px -12px inset, rgb(0, 0, 0) 0px 18px 36px -18px inset;
     color: #fff;
-    padding: 60px 0px 40px 40px;
-    margin-bottom: 5px;
+    padding: 60px 0px 150px 40px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.hero h1 {
-    font-size: 3.5em;
+.hero img {
+    width: 30.5vw;
 
 }
 
 .hero p {
     margin-bottom: 30px;
+    text-align: justify;
 }
 
 .hero a {
@@ -112,15 +116,19 @@ header a:hover {
     border-radius: 5px;
 }
 
-.hero a  {
+.hero a {
     text-indent: 8px;
     font-size: 1.2em;
-    
+    box-shadow: rgba(0, 0, 0, 0.712) 0px 2px 4px;
+    text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
 }
+
 .hero a:hover {
     transition-duration: 300ms;
     font-size: 1.3em;
 }
+
 article {
     max-width: 3000px;
     min-width: 300px;
@@ -131,12 +139,12 @@ article {
     font-family: var(--fontx);
 }
 
-.personagens h2 {
+h2 {
     text-align: center;
     padding-bottom: 20px;
 }
 
-.personagens h2 span {
+h2 span {
     color: var(--color3);
 }
 
@@ -145,17 +153,18 @@ article {
     max-width: 300px;
     min-width: 200px;
     height: 300px;
-    background-color: #ff0000;
+    background-color: var(--color3);
     display: inline-block;
     margin: 20px;
     border-radius: 10px;
     padding: 10px;
     border: 2px solid var(--color3);
+    
 
 }
 
 .personagem>h3 {
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     text-align: center;
 }
 
@@ -212,10 +221,84 @@ h3 {
     padding-bottom: 20px;
 }
 
+table {
+    width: 100%;
+    max-width: 1500px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #1e1e2f;
+    color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+thead {
+    background: linear-gradient(90deg, #6a5acd, #8a2be2);
+}
+
+thead th {
+    padding: 15px;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+tbody td {
+    padding: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: 0.3s;
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+tbody tr:hover {
+    background: rgba(138, 43, 226, 0.25);
+    transform: scale(1.01);
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+
+    thead th,
+    tbody td {
+        padding: 10px;
+    }
+}
+.Curiosidades div {
+    height: 10vw;
+    font-size: 1.4em;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    line-height: 1.2em;
+    border-radius: 10px;
+
+    
+}
+.Curiosidades div img {
+    max-width: 100px;
+    min-width: 30px;
+    padding-bottom: 20px;
+}
+.Curiosidades p {
+    margin-bottom: 400px;
+}
 footer {
+    margin-top: 100px;
     text-align: center;
     width: 100%;
-    border-top: 3px solid var(--color1);
+    border-top: 1px solid var(--color1);
     border-width: 100%;
 
 }
@@ -223,18 +306,30 @@ footer {
 footer p {
     display: inline-block;
     padding-bottom: 20px;
-    padding-left: 90px;
+    padding-left: 40px;
     padding-top: 20px;
     font-family: var(--fonty);
+    padding-right: 90px;
 
 }
+
 footer a {
     text-decoration: none;
     color: #fff;
     font-size: 1.1em;
 }
+
 footer a:hover {
     text-decoration: underline;
     color: var(--color4);
     transition-duration: 600ms;
+}
+footer a i {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+footer a i:hover {
+    font-size: 35px;
+    transition-duration: 1s;
 }
