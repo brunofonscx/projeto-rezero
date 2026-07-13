@@ -17,7 +17,6 @@
     --fontx: "Plus Jakarta Sans", sans-serif;
     --fonty: "Geologica", sans-serif;
     --fontz: "Roboto", sans-serif;
-    ;
 }
 
 * {
@@ -300,6 +299,7 @@ footer {
     width: 100%;
     border-top: 1px solid var(--color1);
     border-width: 100%;
+    
 
 }
 
@@ -310,6 +310,7 @@ footer p {
     padding-top: 20px;
     font-family: var(--fonty);
     padding-right: 90px;
+    text-align: center;
 
 }
 
@@ -317,6 +318,8 @@ footer a {
     text-decoration: none;
     color: #fff;
     font-size: 1.1em;
+    text-align: center;
+    
 }
 
 footer a:hover {
@@ -328,6 +331,7 @@ footer a i {
     font-size: 30px;
     margin-left: 20px;
     margin-top: 20px;
+    text-align: center;
 }
 footer a i:hover {
     font-size: 35px;
